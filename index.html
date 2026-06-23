@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Management System</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="box">
+
+        <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+
+        <input type="text" id="empId" placeholder="Employee ID">
+
+        <input type="text" id="empName" placeholder="Employee Name">
+
+        <input type="text" id="empDept" placeholder="Department">
+
+        <input type="number" id="empSalary" placeholder="Salary">
+
+        <input type="text"
+               id="searchInput"
+               placeholder="Search Employee"
+               onkeyup="searchEmployee()">
+
+        <button class="addBtn" onclick="addEmployee()">
+            Add Employee
+        </button>
+
+    </div>
+
+    <div class="box">
+
+        <h2>Employee Details</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="employeeTable">
+
+            </tbody>
+
+        </table>
+
+        <p id="noResult">No Employee Found</p>
+
+        <div class="countBox">
+            Total Employees :
+            <span id="employeeCount">0</span>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
